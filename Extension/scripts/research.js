@@ -137,6 +137,9 @@ async function enhanceResearchTable() {
       const row = document.createElement('tr');
       row.className = 'hoverCopyTr';
       const scaleFactor = 3;
+      // The maxValue you can get here:
+      // <script id="leagueDesignData" type="application/json">{"acceleration":{"max":148},"braking":{"max":112},"cooling":{"max":72},"downforce":{"max":114},"fuel_economy":{"max":87},"handling":{"max":138},"reliability":{"max":72},"tyre_economy":{"max":85}}</script>
+      // In the webpage, not aprox, is the exact value
       const bestTeamValue = /(\d+)/.exec(bar.querySelector('svg').style.left)[0] * scaleFactor;
       const myValue = bar.previousSibling.lastChild.textContent;
       const clonedCheckbox = checkboxInput[index].parentElement.cloneNode(true);
