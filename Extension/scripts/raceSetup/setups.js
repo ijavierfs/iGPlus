@@ -311,7 +311,8 @@ function makePracticeTableCopiable() {
   });
 }
 
-    if (!document.getElementById('suggestedSetup')) {
+    if (!document.getElementById('suggestedSetup') &&
+  !document.querySelector('.setupRealisticWrap')) {
       await addSetupSuggestionsForDrivers();
       makePracticeTableCopiable();
     }
