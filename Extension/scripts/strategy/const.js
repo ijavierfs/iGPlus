@@ -25,7 +25,7 @@ const track_info = {
   'mx': { 'length': 4.3076024,  'wear': 60, avg: 172.32      }, // Mexico
   'ru': { 'length': 6.078335,   'wear': 50, avg: 197.092     }, // Russia
   'us': { 'length': 4.60296,    'wear': 65, avg: 186.568     }, // USA
-  'nl': { 'length': 4.259,      'wear': 65, avg: 186.568     }, // Netherlands
+  'nl': { 'length': 4.259,      'wear': 50, avg: 186.568     }, // Netherlands
 };
 
 const trackLink = {
